@@ -1901,7 +1901,7 @@ perks : [
    //463
   {name : "As a Leaf", skill : 6, skillReq : 40,
    xPos : 250/4, yPos : 212/4, preReqs : [110], nextPerk: -1,
-   description : "If not wearing heavy armor, jump in combat to cause all incoming attacks and spells to miss for 1 second. This effect has a 10 second cooldown."},
+   description : "While sprinting in Light Armor or while Unarmored, you cannot be staggered and take 50% less damage from power attacks."},
    //464
   {name : "Death's Emperor", skill : 9, skillReq : 70,
    xPos : 100/4, yPos : 150/4, preReqs : [-144, -152], nextPerk: -1,
