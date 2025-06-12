@@ -1,12 +1,12 @@
 const gameMechanicsData = {
-  name: "2.2.8",
+  name: "LoreRim v4",
   id : 0,
   
   initialPerks: 3,
   
   oghmaData : {
-    perksGiven : 7,
-    hmsGiven : [200,200,200]
+    perksGiven : 3,
+    hmsGiven : [0,0,0]
   },
   
   leveling: {

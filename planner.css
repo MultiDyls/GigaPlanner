@@ -28,7 +28,11 @@ h1 {
 }
 
 .whiteText{
-  color:white:
+  color:white;
+}
+
+.greenText{
+  color:#7FFF00;
 }
 
 #activeSkillNameAndLevel {
@@ -80,18 +84,18 @@ h1 {
 
 #mainSkillDisplayDiv {
   margin:auto;
-  max-width:1500px;
+  max-width:1800px;
   border: 1px solid black;
   display: flex;
-  padding: 3px;
-  background-color:slateblue;
+  padding: 1px;
+  background-color:#7f6000;
   color:white;
   border-radius:25px;
 }
 
 #activeSkillDisplaySVG {
-  width:780px;
-  height:550px;
+  width:1000px;
+  height:650px;
   margin:auto;
   display:block;
 }
@@ -103,7 +107,7 @@ h1 {
 #activeSkillDisplayDiv {
   float:left;
   width:40%;
-  min-width:760px;
+  min-width:1060px;
   margin:5px;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -354,7 +358,7 @@ position: absolute;
 background-color: lightyellow;
 border: 1px solid #ccc;
 padding: 10px;
-width: 740px;
+width: 1000px;
 z-index: 1000;
 font-size: 16px;
 }

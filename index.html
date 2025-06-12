@@ -20,7 +20,7 @@
   <div id="mainSkillDisplayDiv" style="display:none;">
     <div id="rightStatsPanelDiv">
       <div id="raceAndStatsDiv" class="statsSubsectionDiv">
-        <div class="subsectionSubtitle">Build Choices (v3.0.4)</div>
+        <div class="subsectionSubtitle">Lorerim v4.0.31</div>
         <div class="selectInputWithLabel" id="raceSelectInputDiv" data-list="curRaceList">Race
           <select id="raceSelect" class="selectInputWithLabelselect" data-list="curRaceList";
 			onfocus='$(this).removeClass("selectInputWithLabelselect"); $(this).addClass("selectInputWithLabelselected"); this.size=10'
@@ -70,9 +70,9 @@
         <div class="selectInputWithSmallLabel" id="oghmaInputDiv">Oghma Infinium Choice
           <select id="oghmaSelect">
             <option value="0">None</option>
-            <option value="1">Health</option>
-            <option value="2">Magicka</option>
-            <option value="3">Stamina</option>
+            <option value="1">Might</option>
+            <option value="2">Shadow</option>
+            <option value="3">Magic</option>
           </select>
         </div>
         </div>
@@ -292,7 +292,7 @@ $(document).ready(function(event) {
 							+ "<br> Carry Weight: " + curRaceList[this.value].startingCW
 							+ "<br> Unarmed Damage: " + curRaceList[this.value].unarmedDam
 							+ "<br>"
-						+ "<br> <u>Starting skills</u>" 
+						+ "<br> <u>Starting skills</u>"							
 							+ "<br> Smithing: " + curRaceList[this.value].startingSkills[0] 
 							+ "<br> Heavy Armor: " + curRaceList[this.value].startingSkills[1] 
 							+ "<br> Block: " + curRaceList[this.value].startingSkills[2]
@@ -338,7 +338,7 @@ $(document).ready(function(event) {
 };
   let clientRect = this.parentElement.getBoundingClientRect();
         $("#description").html(choiceDesc);
-        $("#description").css({left : `${clientRect.left+225}px`, top : `${clientRect.top+0}px`, display: "block"});
+        $("#description").css({left : `${clientRect.left+225}px`, top : `${clientRect.top-15}px`, display: "block"});
     });
 });
 

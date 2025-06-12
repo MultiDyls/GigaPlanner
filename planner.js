@@ -11,6 +11,7 @@ var curBlessingList;
 var activeSkill = 0;
 var tookPerkWithLastClick = false;
 var copiedMessageTimeoutID = -1;
+var freePerks = [418, 2, 4, 5, 6, 7, 8, 9, 10 ,11]
 
 var characterData = {
   race: 0, //This is an index into the race data array
@@ -346,8 +347,7 @@ function hasPerkPreReqs(perkNum){
 //Take the perk. Assumes that all the prerequisites are satisfied.
 function actuallyTakePerk(perkNum){
 	characterData.perksTaken[perkNum] = true;
-	let skill = curPerkList.perks[perkNum].skill 
-	if (skill < 18){
+	if (curPerkList.perks[perkNum].skill < 18 && !freePerks.includes(perkNum)){
   		characterData.spentPerks++;
   }
  updateDerivedAttributes()
@@ -356,9 +356,8 @@ function actuallyTakePerk(perkNum){
 //Remove the perk. Assumes that the perk has actually been taken.
 function actuallyRemovePerk(perkNum){
   characterData.perksTaken[perkNum] = false;
-  let skill = curPerkList.perks[perkNum].skill 
-  if (skill < 18){
-  characterData.spentPerks--;
+	if (curPerkList.perks[perkNum].skill < 18 && !freePerks.includes(perkNum)){
+		characterData.spentPerks--;
 	}
  updateDerivedAttributes()
 }
@@ -552,7 +551,7 @@ function calcLevel(){
   
 //Calculate how much character XP has been earned based on skill levels
 function calcTotalXP(){
-let answer = 0;
+let answer = -60;
 for(let i = 0; i < 18; i++){
 	let baseSkill = raceListData[characterData.race].startingSkills[i];
 	let currentSkill = characterData.skillLevels[i];
@@ -560,11 +559,11 @@ for(let i = 0; i < 18; i++){
 	if (currentSkill <= 25) {
 		n = currentSkill - baseSkill;
 	} else if (currentSkill <= 50) {
-		n = 25 + (currentSkill - 25) * 2 - baseSkill;
+		n = 25 + ((currentSkill - 25) * 2) - baseSkill;
 	} else if (currentSkill <= 75) {
-		n = 75 + (currentSkill - 50) * 3 - baseSkill; 
+		n = 75 + ((currentSkill - 50) * 3)  - baseSkill; 
 	} else if (currentSkill <= 100) {
-		n = 150 + (currentSkill - 75) * 6 - baseSkill;
+		n = 150 + ((currentSkill - 75) * 6) - baseSkill;
 	}
     answer += (n);
   }
@@ -678,17 +677,28 @@ function buildCodeParserV1(buildCode){
   characterData.race = buildCode.charCodeAt(28);
   characterData.standingStone = buildCode.charCodeAt(29);
   characterData.blessing = buildCode.charCodeAt(30);
-  
   characterData.perksTaken = [];
-  //this method will be kind of inefficient but EHHHHHHH
+  
+//this method will be kind of inefficient but EHHHHHHH
   for(let i = 0; i < curPerkList.perks.length; i++){
     let index = 31 + Math.floor(i/8);
     let offset = 7 - (i % 8);
     let hasPerk = (buildCode.charCodeAt(index) & (1 << offset)) > 0;
     characterData.perksTaken.push(hasPerk);
-    if(hasPerk && curPerkList.perks[i].skill < 18) characterData.spentPerks++;
-  }
+  };
   
+  //force recalc of spent perks
+  
+  characterData.spentPerks = characterData.perksTaken.filter(Boolean).length;
+  for(let i = 0; i < curPerkList.perks.length; i++){
+	let hasPerk = characterHasPerk(i);
+	let skill = curPerkList.perks[i].skill;
+	if (hasPerk){
+		if (freePerks.includes(i) || skill > 17){
+			characterData.spentPerks--;
+			}
+		}	 
+   }
   return true;
 }
 
@@ -696,6 +706,7 @@ function buildCodeParserV1(buildCode){
 function buildCodeParserV2(buildCode){
   let answer = buildCodeParserV1(buildCode);
   characterData.oghmaChoice = characterData.oghmaChoice >> 4;
+  oghmaBonus();
   characterData.skillLevels[18] = characterData.level;
   return answer;
 }
