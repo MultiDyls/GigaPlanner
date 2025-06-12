@@ -527,11 +527,11 @@ perks : [
    description : "Your vast knowledge of anatomy allows you to perform devastating sneak attacks on almost any target. (5x/2x sneak attack damage with melee/ranged weapons on all targets, 3x/2x on targets immune to sneak attacks)"},
    //124
   {name : "Muffled Movement", skill : 7, skillReq : 25,
-   xPos : 125/4, yPos : 245/4, preReqs : [119], nextPerk: -1,
+   xPos : 100/4, yPos : 245/4, preReqs : [119], nextPerk: -1,
    description : "Your newfound finesse allows you to move more quietly while not wearing any heavy armor."},
    //125
   {name : "Light Steps", skill : 7, skillReq : 50,
-   xPos : 129/4, yPos : 147/4, preReqs : [124], nextPerk: -1,
+   xPos : 125/4, yPos : 147/4, preReqs : [124], nextPerk: -1,
    description : "By distributing your weight more consciously, you're able to move more freely while sneaking and avoid triggering pressure plates or similar mechanisms."},
    //126
   {name : "Acrobatics", skill : 7, skillReq : 75,
@@ -1936,11 +1936,11 @@ perks : [
    description : "Sneaking is 15% more effective against targets that are in combat with you, or 30% if they are in combat with someone else."},
    //472
   {name : "Tripwire", skill : 7, skillReq : 20,
-   xPos : 85/4, yPos : 300/4, preReqs : [119], nextPerk: -1,
+   xPos : 150/4, yPos : 250/4, preReqs : [119], nextPerk: -1,
    description : "Grants the 'Tripwire' power. At will, places a tripwire in front of you for 120 seconds. It snaps when tripped, knocking all targets hit by it to the floor."},
    //473
   {name : "Whiplash", skill : 7, skillReq : 50,
-   xPos : 85/4, yPos : 200/4, preReqs : [472], nextPerk: -1,
+   xPos : 175/4, yPos : 175/4, preReqs : [472], nextPerk: -1,
    description : "Tripwire also reduces armor rating by 250 points for 10 seconds."},
    //474
   {name : "Cloak and Dagger", skill : 7, skillReq : 70,
