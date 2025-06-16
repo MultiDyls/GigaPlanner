@@ -1949,7 +1949,7 @@ perks : [
    //475
   {name : "Alkahest", skill : 11, skillReq : 60,
    xPos : 75/3, yPos : 100/4, preReqs : [183], nextPerk: -1,
-   description : "By adding small amounts of truly horrifying ingredients, you are able to make your poisons more potent."},
+   description : "Your poisons are highly corrosive, enabling you to ignore 20% of the armor rating of an affected target for their duration."},
    //476
   {name : "World Serpent", skill : 11, skillReq : 90,
    xPos : 100/3, yPos : 50/4, preReqs : [475], nextPerk: -1,
