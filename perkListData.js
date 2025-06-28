@@ -627,7 +627,7 @@ perks : [
    description : "You have unburdened your body. You gain 200 armor rating when not wearing armor and gain 20% armor penetration and 20 unarmed damage when unarmored."},
    //149
   {name : "Sound Mind", skill : 9, skillReq : 60,
-   xPos : 225/4, yPos : 150/4, preReqs : [148], nextPerk: -1,
+   xPos : 225/4, yPos : 150/4, preReqs : [147], nextPerk: -1,
    description : "You've unburdened your inner thoughts, gaining 10% resistance to magic and 50% greater health, stamina and magicka regen when unarmored."},
    //150
   {name : "Sound Spirit", skill : 9, skillReq : 80,
@@ -1435,7 +1435,7 @@ perks : [
    //350	
   {name : "Scout", skill : 18, skillReq : 20,
    xPos : 300/4, yPos : 150/4, preReqs : [343], nextPerk: -1,
-   description : "Your power attacks cost 10% less Stamina"},
+   description : "Your bows, crossbows and throwing knives do 10% more damage."},
   //351	
   {name : "Spellblade", skill : 18, skillReq : 20,
    xPos : 350/4, yPos : 150/4, preReqs : [344], nextPerk: -1,
@@ -1570,7 +1570,7 @@ perks : [
    //383
   {name : "Adrenaline <br> Rush", skill : 19, skillReq: 0,
    xPos : 75/4, yPos : 25/4, preReqs : [], nextPerk: -1,
-   description : "You possess a natural flight response. When at less than <20%> health, you move 20% faster and regenerate 1 stamina per second but also deal 30% less damage when below this threshold."},
+   description : "You possess a natural flight response. When at less than 20% health, you move 20% faster and regenerate 1 stamina per second but also deal 30% less damage when below this threshold."},
    //384
   {name : "Au <br> Naturel", skill : 19, skillReq: 0,
    xPos : 125/4, yPos : 25/4, preReqs : [], nextPerk: -1,
@@ -1578,7 +1578,7 @@ perks : [
    //385
   {name : "Bad <br> Natured", skill : 19, skillReq: 0,
    xPos : 175/4, yPos : 25/4, preReqs : [], nextPerk: -1,
-   description : "You were born into wickedness. Your attacks while being crouched deals <20%> more and you're better at pickpocketing. However, attacks while standing up do 20% less and wearing a divine amulet will hurt you."},
+   description : "You were born into wickedness. Your attacks while being crouched deals 20% more and you're better at pickpocketing. However, attacks while standing up do 20% less and wearing a divine amulet will hurt you."},
    //386
   {name : "Bane of <br> the Wicked", skill : 19, skillReq: 0,
    xPos : 225/4, yPos : 25/4, preReqs : [], nextPerk: -1,
@@ -1662,7 +1662,7 @@ perks : [
    //406
   {name : "Rage", skill : 19, skillReq: 0,
    xPos : 25/4, yPos : 175/4, preReqs : [], nextPerk: -1,
-   description : "You posses a natural fight response. When at less than 20% health, you deal 20% more damage and take 20% less damage. However, you move <30% slower when below this threshold."},
+   description : "You posses a natural fight response. When at less than 20% health, you deal 20% more damage and take 20% less damage. However, you move 30% slower when below this threshold."},
    //407
   {name : "Skilled", skill : 19, skillReq: 0,
    xPos : 75/4, yPos : 175/4, preReqs : [], nextPerk: -1,
@@ -1924,7 +1924,7 @@ perks : [
    description : "Activate an automaton under Lockdown to lockpick its brain. Succeed within 15 seconds to hack the automaton, forcing it to follow you and fight for you. If you fail, you can't try again for 30 seconds. You can only have one Hotwired Automaton at a time."},
    //469
   {name : "Percussive Maintenance", skill : 8, skillReq : 100,
-   xPos : 225/4, yPos : 75/4, preReqs : [467], nextPerk: -1,
+   xPos : 225/4, yPos : 75/4, preReqs : [468], nextPerk: -1,
    description : "Your Hotwired Automaton moves 30% faster and attacks 20% faster. Hitting your Hotwired Automaton with a mace or warhammer repairs it 150 points (or 300 points on a power attack) and further increases attack speed by 50% for 10 seconds."},
    //470
   {name : "Problem Solver", skill : 7, skillReq : 80,
