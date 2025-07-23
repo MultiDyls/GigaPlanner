@@ -39,10 +39,10 @@ bonus: "You receive Blessed Fire, Dead Horde and Salvation powers. Enchanting is
 	//9
 {name: "Thief", group: "The Thief is the last Guardian Constellation, and her season is the darkest month of Evening Star.", 
 description: "Those under the sign of the Thief have increased dexterity.", 
-bonus: "Lockpicks are 30% more durable, lockpicking expertise is increased by 2, pickpocketing is 30% more likely to succeed, you are 30% harder to detect, you can sneak without proficiency, gain 10% chance to avoid physical damage. Gains 1 extra poison dose when mastering alchemy."},
+bonus: "Lockpicks are 30% more durable, lockpicking expertise is increased by 2, pickpocketing is 30% more likely to succeed, you are 30% harder to detect, you can sneak without proficiency, gain 10% chance to avoid physical damage. After mastering alchemy, able to apply 1 extra poison dose."},
 	//10
 {name: "Lover", group: "The Lover is one of the Thief's Charges and her season is Sun's Dawn", 
-description: "Those under the sign of the Lover have increases agility and natural charm.", 
+description: "Those under the sign of the Lover have increased agility and natural charm.", 
 bonus: "Stamina regeneration increases by 40%, increases chance to avoid physical damage by 25%, speech skill is 25 higher, shout cooldown is reduced by 5%, and an additional 5% after mastering speechcraft."},
 	//11
 {name: "Shadow", group: "The Shadow's season is Second Seed.", 
@@ -51,7 +51,7 @@ bonus: "You are 50% harder to detect, you can sneak without proficiency, movemen
 	//12
 {name: "Tower", group: "The Tower is one of the Thief's Charges and its season is Frostfall.", 
 description: "Those under the sign of the Tower have nimble hands and a knack for finding fortune.", 
-bonus: "Prices are 20% more favorable, 50 more carry weight, lockpicks are 40% more durable, lockpicking expertise is increased by 4, you can pick effortless locks in plain sight without being noticed. Reflect 10% damage upon mastering light armor, heavy armor or block."},
+bonus: "Prices are 20% more favorable, 50 more carry weight, lockpicks are 40% more durable, lockpicking expertise is increased by 4, you can pick effortless locks in plain sight without being noticed. Reflect 10% damage upon mastering a defensive skill."},
 	//13
 {name: "Serpent",group: "The Serpent wanders about in the sky and has no Season, though its motions are predictable to a degree.", 
 description: "Those under the sign of the Serpent have improved precision, resistance to poison and paralysis, and can cast Serpent's Curse once a day.", 
