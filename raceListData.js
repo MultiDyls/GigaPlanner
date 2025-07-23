@@ -17,8 +17,8 @@ const raceListData = [
                        0,       //Marksman
                        10,       //Evasion
                        10,       //Sneak
-                       0,       //Wayfarer
-                       10,       //Finesse
+                       10,       //Wayfarer
+                       0,       //Finesse
                        0,       //Speech
                        15,       //Alchemy
                        0,       //Illusion
@@ -150,7 +150,7 @@ const raceListData = [
                         1,       //Destiny
                         0],		 // Traits	
 	 desc: "The cosmopolitan citizens of Cyrodiil are descended from the founders of the glorious Empire that has influenced Tamriel's history throughout the eras. Imperials are talented leaders and traders among society, skilled in both magic and combat thanks to martial and academic education of the schools of Cyrodiil. Their leadership can encourage their followers to fight well in combat.",
-	 bonus: "&#x2022; Voice of the Emperor: Imperials are talented leaders and traders among society. Speech skill is 15 higher, prices are 15% more favorable, magicka and stamina of nearby allies increase by <25>.<br> &#x2022; Imperial Diversity: Imperial education involves various martial and academical trainings, producing citizens with variety of skills. Health, magicka, and stamina regenerate 25% faster.",
+	 bonus: "&#x2022; Voice of the Emperor: Imperials are talented leaders and traders among society. Speech skill is 15 higher, prices are 15% more favorable, magicka and stamina of nearby allies increase by 25.<br> &#x2022; Imperial Diversity: Imperial education involves various martial and academical trainings, producing citizens with variety of skills. Health, magicka, and stamina regenerate 25% faster.",
     },
     {
      name: "Khajiit", 
@@ -190,7 +190,7 @@ const raceListData = [
      startingHMSRegen: [0.25,1.00,1.65], 
      unarmedDam: 14,
      startingSkills : [10,       //Smithing
-                       0,       //Heavy Armor
+                       10,       //Heavy Armor
                        10,       //Block
                        15,       //Two-handed
                        10,       //One-handed
@@ -270,7 +270,7 @@ const raceListData = [
                         1,       //Destiny
                         0],		 // Traits	
 	 desc: "The dark-skinned, wiry-haired Redguards of Hammerfell seem born for battle, though their proud and independent spirits suit free-ranging heroism more. They have a hardy constitution and natural resistance to poison and disease, but tend to shun their magic. They are full of stamina and naturally skilled in melee combat, making them one of the strongest warriors in Tamriel.",
-	 bonus: "&#x2022; Resist Poison and Disease: Your Redguard blood, tempered in the deserts of Hammerfell, grants you a very strong resistance to poisons and diseases. Poison deals 50% less damage to you, you are 50% less likely to contract diseases.<br>&#x2022; Adrenaline Rush: Redguards are granted increased stamina, and can sprint much longer without being exhausted. Stamina regenerations is increased, sprinting costs 1 less stamina per second.<br>&#x2022; Martial Prowess: Redguards are naturally skilled in martial arts, and can wield their weapons with great precision. Armor penetration with melee weapons is increased by 5.",
+	 bonus: "&#x2022; Resist Poison and Disease: Your Redguard blood, tempered in the deserts of Hammerfell, grants you a very strong resistance to poisons and diseases. Poison deals 50% less damage to you, you are 50% less likely to contract diseases.<br>&#x2022; Adrenaline Rush: Redguards are granted increased stamina, and can sprint much longer without being exhausted. Stamina regeneration is increased, sprinting costs 1 less stamina per second.<br>&#x2022; Martial Prowess: Redguards are naturally skilled in martial arts, and can wield their weapons with great precision. Armor penetration with melee weapons is increased by 5.",
     },
     {
      name: "Bosmer", 
