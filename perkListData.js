@@ -154,9 +154,9 @@ perks : [
    xPos : 103/3, yPos : 60/4, preReqs : [29], nextPerk: -1,
    description : "You have honed your defensive movements to perfection. (Blocking with a shield does not slow you down, 75% less shield weight, 50% more armor rating)"},
    //31
-  {name : "Perfect Block", skill : 2, skillReq : 25,
+  {name : "Powerful Bashes", skill : 2, skillReq : 25,
    xPos : 250/3, yPos : 239/4, preReqs : [25], nextPerk: -1,
-   description : "After much training, you can perform a much more powerful bash as well as a perfect block. (Can power bash. Block within 0.33s of an attack to perform a perfect block)"},
+   description : "By gathering your strength for a short while, you can perform a much more powerful bash. (Able to do a power bash)"},
     //32
   {name : "Shield Strike", skill : 2, skillReq : 25,
    xPos : 190/3, yPos : 160/4, preReqs : [31], nextPerk: 33,
@@ -1662,7 +1662,7 @@ perks : [
    //406
   {name : "Rage", skill : 19, skillReq: 0,
    xPos : 25/4, yPos : 175/4, preReqs : [], nextPerk: -1,
-   description : "You posses a natural fight response. When at less than 20% health, you deal 20% more damage and take 20% less damage. However, you move 30% slower when below this threshold."},
+   description : "You possess a natural fight response. When at less than 20% health, you deal 20% more damage and take 20% less damage. However, you move 30% slower when below this threshold."},
    //407
   {name : "Skilled", skill : 19, skillReq: 0,
    xPos : 75/4, yPos : 175/4, preReqs : [], nextPerk: -1,
@@ -1980,7 +1980,7 @@ perks : [
    //482
   {name : "Blood <br> Warrior", skill : 19, skillReq: 0,
    xPos : 125/4, yPos : 225/4, preReqs : [], nextPerk: -1,
-   description : "You take 50% more physical damage and have 50% weakness to Magicka. However you start with +50 health and gain +5 health per level."},
+   description : "You take 50% more physical damage and have 100% weakness to Poison. However you start with +50 health and gain +5 health per level."},
    //483
   {name : "Disbeliever", skill : 19, skillReq: 0,
    xPos : 175/4, yPos : 225/4, preReqs : [], nextPerk: -1,
