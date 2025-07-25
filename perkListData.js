@@ -1829,7 +1829,7 @@ perks : [
    //445
   {name : "Critical Slam", skill : 3, skillReq : 80,
    xPos : 325/4, yPos : 162/4, preReqs : [55], nextPerk: -1,
-   description : "Standing power attacks with battleaxes and halberds execute targets below 25% Health, delivering a critical strike that deals twenty times critical damage."}, 
+   description : "Whenever a standing power attack with a warhammer inflicts a critical strike, it deals 3% more critical damage per point of Stamina."}, 
    //446
   {name : "Death or Glory", skill : 3, skillReq : 80,
    xPos : 275/4, yPos : 162/4, preReqs : [51], nextPerk: -1,
