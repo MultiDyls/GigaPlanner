@@ -32,7 +32,7 @@ $(document).ready(function(){
   
   attachHandlers();
   
-  $("#mainTitle").html("LoreRim Character Planner");
+  $("#mainTitle").html("LoreRim Character Planner (deprecated)");
   $("#mainSkillDisplayDiv").fadeIn(500);
 });
 
